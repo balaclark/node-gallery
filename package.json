@@ -14,8 +14,6 @@
   "dependencies": {
     "walk": "*",
     "express": "3.0",
-    "ejs": "*",
-    "exif": "git://github.com/cianclarke/node-exif.git",
     "imagemagick" : "*"
   },
   "scripts": {

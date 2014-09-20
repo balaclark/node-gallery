@@ -1,8 +1,6 @@
 var fs = require('fs'),
-exif = require('./exif.js'),
 walk = require('walk'),
 util = require('util'),
-path = require('path'),
 im = require('imagemagick');
 
 var gallery = {
@@ -178,21 +176,7 @@ var gallery = {
           name: photoName,
           path: filepath
         };
-  
-        //curAlbum.photos.push(photo);
-  
-        // we have a photo object - let's try get it's exif data. We've
-        // already pushed into curAlbum, no rush getting exif now!
-        // Create a closure to give us scope to photo
-        (function(photo, curAlbum){
-          var fullPath = gallery.directory + "/" + photo.path;
-          fullPath = (gallery.static) ? gallery.static + "/" + fullPath: fullPath;
-  
-          exif(fullPath, photo, function(err, exifPhoto){
-            // no need to do anything with our result - we've altered
-            // the photo object..
-          });
-        })(photo, curAlbum);
+
         curAlbum.photos.push(photo);
       }
     }
