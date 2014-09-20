@@ -206,7 +206,7 @@ var gallery = {
         var albumThumb = photoChildren[0].path;
         return albumThumb;
       }else{
-        if (albumChildren.length && albumChildren.length>1){
+        if (albumChildren.length && albumChildren.length>0){
           return _buildThumbnails(albumChildren[0]);
         }else{
           // TODO: No image could be found
