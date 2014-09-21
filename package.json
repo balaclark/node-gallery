@@ -3,9 +3,9 @@
   "name": "node-gallery",
   "description": "NodeJS Photo Gallery using directory structure & exif info to output a gallery",
   "version": "0.3.2",
-  "homepage": "http://www.github.com/cianclarke/node-gallery",
+  "homepage": "http://www.github.com/balaclark/node-gallery",
   "repository": {
-    "url": ""
+    "url": "git@github.com:balaclark/node-gallery.git"
   },
   "main": "gallery.js",
   "engines": {
